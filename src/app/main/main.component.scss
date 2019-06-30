@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Pacifico|Dancing+Script|Kaushan+Script|Rancho|Lato+Light|Montserrat|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600|Comfortaa|Righteous&display=swap');
+
+.view {
+    background: url("../../assets/apple-laptop.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: transparent;
+
+    .top-nav-collapse {
+        background-color: #4285F4;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .navbar {
+            background-color: #4285F4;
+        }
+    }
+}
+
+.nav-font {
+    font-family: 'Pacifico', serif;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.container{
+    .title-font {
+        font-family: 'Righteous', cursive;
+        font-size: 40px;
+    }
+    
+    .passage-text {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+    .main-font{
+        font-family: 'Cinzel', serif;
+        font-size: 50px;
+    }
+    
+    .typed-font {
+        font-family: 'Kaushan Script', serif;
+        font-size: 24px;
+        .typer{
+            color: green;
+        }
+    }
+}
+

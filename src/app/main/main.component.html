@@ -1,0 +1,184 @@
+<header class="h-100">
+  <mdb-navbar
+    SideClass="navbar fixed-top navbar-expand-lg navbar-dark black scrolling-navbar intro-fixed-nav"
+    [containerInside]="true"
+  >
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand">
+        <div class="avatar mr-auto">
+          <img
+            src="assets/LogoMakr_7NOcYZ.png"
+            class="img-responsive"
+            height="40"
+            width="50"
+          />
+        </div>
+      </a>
+    </mdb-navbar-brand>
+    <links class="nav-font">
+      <ul class="navbar-nav float-right mr-auto">
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a mdbPageScroll href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link">Works</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+  <!-- Main -->
+  <div class="view intro-2 zoom">
+    <div class="full-bg-img">
+      <div class="mask rgba-blue-slight flex-center">
+        <div class="container text-right white-text wow fadeInUp">
+          <p class='main-font'>Satheesh Kumar</p>
+            <p class='typed-font'>I am a
+                <span class='typed-font typer pl-2'></span>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Main -->
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center py-5">
+  <div class="container">
+    <section class="py-5 mt-5 pt-5">
+      <h2 class="py-5 font-weight-bold text-center title-font">About</h2>
+      <div class="row mt-5 pt-5 mb-3">
+        <div class="col-lg-5 text-center zoom">
+          <div
+            class="pt-4"
+          >
+            <img
+              src="assets/pic_portfolio.png"
+              alt=""
+              class="img-fluid z-depth-0"
+            />
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div
+            class="text-height"
+          >
+            <div class="row pb-3">
+              <div class="col-2 col-md-1"></div>
+              <div class="col-10">
+                <p class="grey-text text-left passage-text">
+                  As a developer, I enjoy using my obsessive attention to
+                  detail, my unequivocal love for making things, and my
+                  mission-driven work ethic to change the world.
+                </p>
+              </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col-2 col-md-1"></div>
+              <div class="col-10">
+                <p class="grey-text text-left passage-text">
+                  That's why I'm excited to make a significant impact at a high
+                  growth company: fast load times and lag-free interaction, my
+                  most top priority. Websites don't have to be static. I love
+                  making pages come to life.
+                </p>
+              </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col-2 col-md-1"></div>
+              <div class="col-10">
+                <p class="grey-text text-left passage-text">
+                  I have done work in software development, mobile app creation,
+                  front-end/back-end web and database management. When I'm not
+                  coding, you'll find me cooking, playing cricket.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- Footer -->
+
+  <!-- Footer -->
+</main>
+
+<footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #6351ce;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+            <a class="tw-ic">
+              <mdb-icon icon="twitter" size="2x" class="fa white-text mr-4"></mdb-icon>
+            </a>
+            <a class="li-ic">
+              <mdb-icon icon="linkedin" size="2x" class="fa white-text mr-4"></mdb-icon>
+            </a>
+            <a class="li-ic">
+              <mdb-icon icon="github" size="2x" class="fa white-text mr-4"></mdb-icon>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container text-center text-md-left mt-5">
+      <div class="row mt-3">
+        <div class="col-md-8 mx-auto mb-4">
+            <mdb-card>
+                <mdb-card-header class="info-color white-text text-center py-4">
+                  <h5>
+                    <strong>Contact us</strong>
+                  </h5>
+                </mdb-card-header>
+                <mdb-card-body class="px-lg-5 pt-0">
+                  <form class="text-center" style="color: #757575;" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                    <div class="md-form mt-3">
+                      <input type="text" formControlName="contactFormName" id="materialContactFormName" class="form-control"
+                        mdbInput>
+                      <label for="materialContactFormName">Name</label>
+                    </div>
+                    <div class="md-form">
+                        <input type="email" formControlName="contactFormSubjects" id="contactFormSubjects" class="form-control"
+                          mdbInput>
+                        <label for="contactFormSubjects">Subject</label>
+                      </div>
+                    <div class="md-form">
+                      <textarea type="text" formControlName="contactFormMessage" id="materialContactFormMessage" class="form-control md-textarea"
+                        mdbInput></textarea>
+                      <label for="materialContactFormMessage">Message</label>
+                    </div>
+                    <button mdbBtn color="info" outline="false" rounded="false" block="false" class="z-depth-0 my-4 waves-effect"
+                      mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Send</button>
+                  </form>
+                </mdb-card-body>
+              </mdb-card>
+        </div>
+        <div class="col-md-4 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <mdb-icon icon="envelope" class="fa mr-3"></mdb-icon> satheeshexcelkpm@gmail.com
+          </p>
+          <p>
+            <mdb-icon icon="phone" class="fa mr-3"></mdb-icon> +91 8667345724
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
