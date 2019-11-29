@@ -1,6 +1,5 @@
 {
-	"posts": {
-		"data": [{
+	"data": [{
 			"name": "msk",
 			"value": "msk",
 			"type": "option"
@@ -16,8 +15,8 @@
 			"name": "tamilmani",
 			"value": "tamilmani",
 			"type": "option"
-		}]
-	},
+		}],
+  
 	"profile": {
 		"name": "typicode"
 	}
