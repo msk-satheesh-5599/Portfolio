@@ -16,9 +16,17 @@
 		"value": "tamilmani",
 		"type": "option"
 	}],
+	"profile": {
+		"name": "typicode"
+	},
 	"data": [{
 		"name": "msk",
 		"value": "msk",
+		"data": [{
+			"name": "bharath",
+			"value": "bharath",
+			"type": "option"
+		}],
 		"type": "option"
 	}, {
 		"name": "bharath",
@@ -35,9 +43,11 @@
 	}],
 	"msk": {
 		"data": [{
-			"name": "msk",
-			"value": "msk",
-			"type": "option"
+			"data": [{
+				"name": "msk",
+				"value": "msk",
+				"type": "option"
+			}]
 		}]
 	},
 	"bharath": {
